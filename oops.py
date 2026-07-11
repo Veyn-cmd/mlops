@@ -32,10 +32,10 @@ class chatbook:
             self.signin()
 
         elif user_input == '3':
-            pass
+            self.my_posts()
 
         elif user_input == '4':
-            pass
+            self.sendmsg()
  
         else:
             exit()
@@ -66,6 +66,31 @@ class chatbook:
             else:
                 print("Invalid credentials. Please try again.")
                 print("\n")
-                self.menu()
+        self.menu()
+
+    def my_posts(self):
+        if self.loggedin == True:
+            txt = input("Write your post: ")
+            print('your post is: ', txt)
+
+        else:
+            print("You need to signin first to write a post.")
+            
+
+        self.menu()
+
+
+    def sendmsg(self):
+        if self.loggedin == True:
+            txt = input("Write your message: ")
+            frnd = input("Enter your friend's email: ")
+            print('your message is: ', txt, 'to', frnd)
+        else:
+            print("You need to signin first to send a message.")
+        
+        self.menu()
+
+
+
 
 obj = chatbook()
