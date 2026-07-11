@@ -2,6 +2,9 @@
 
 
 
+import email
+
+
 class chatbook:
     def __init__(self):
         self.username = ''
@@ -23,10 +26,10 @@ class chatbook:
 
 
         if user_input == '1':
-            pass
+            self.signup()
 
         elif user_input == '2':
-            pass
+            self.signin()
 
         elif user_input == '3':
             pass
@@ -38,5 +41,31 @@ class chatbook:
             exit()
 
 
+    def signup(self):
+        email = input("Enter your email: ")
+        password = input("Enter your password: ")
+        self.username = email
+        self.password = password
+        print("Signup successful!")
+        print("\n")
+        self.menu()
+    
+
+    def signin(self):
+        if self.username == '' and self.password == '':
+            print("No user found. Please signup first.")
+            self.menu()
+        else:
+            uname = input("Enter your email: ")
+            pwd = input("Enter your password: ")
+            
+            if uname == self.username  and pwd == self.password:
+                self.loggedin = True
+                print("Signin successful!")
+                
+            else:
+                print("Invalid credentials. Please try again.")
+                print("\n")
+                self.menu()
 
 obj = chatbook()
