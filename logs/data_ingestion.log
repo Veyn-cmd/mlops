@@ -16,3 +16,7 @@
 2026-07-14 07:45:09,867 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/Veyn-cmd/mlops/refs/heads/main/data/spam.csv. Shape: (5572, 2)
 2026-07-14 07:45:09,867 - data_ingestion - DEBUG - data preprocessing completed successfully
 2026-07-14 07:45:09,881 - data_ingestion - DEBUG - Data saved successfully to ./data\raw.
+2026-07-14 08:31:53,710 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-07-14 08:31:54,719 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/Veyn-cmd/mlops/refs/heads/main/data/spam.csv. Shape: (5572, 2)
+2026-07-14 08:31:54,719 - data_ingestion - DEBUG - data preprocessing completed successfully
+2026-07-14 08:31:54,742 - data_ingestion - DEBUG - Data saved successfully to ./data\raw.
