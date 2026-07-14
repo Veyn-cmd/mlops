@@ -5,52 +5,6 @@
 2026-07-13 12:10:43,870 - data_ingestion - DEBUG - preprocessing starting...
 2026-07-13 12:10:43,873 - data_ingestion - DEBUG - target colulmn encoded
 2026-07-13 12:10:43,880 - data_ingestion - DEBUG - duplicates removed
-2026-07-13 12:11:50,336 - data_ingestion - ERROR - Error during data preprocessing: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:11:50,336 - data_ingestion - ERROR - Failed to complete the data transformation process: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:14:25,278 - data_ingestion - DEBUG - Data loaded properly
-2026-07-13 12:14:25,279 - data_ingestion - DEBUG - preprocessing starting...
-2026-07-13 12:14:25,280 - data_ingestion - DEBUG - target colulmn encoded
-2026-07-13 12:14:25,280 - data_ingestion - DEBUG - duplicates removed
-2026-07-13 12:15:34,113 - data_ingestion - ERROR - Error during data preprocessing: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:15:34,113 - data_ingestion - ERROR - Failed to complete the data transformation process: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:20:14,552 - data_ingestion - DEBUG - Data loaded properly
-2026-07-13 12:20:14,552 - data_ingestion - DEBUG - preprocessing starting...
-2026-07-13 12:20:14,552 - data_ingestion - DEBUG - target colulmn encoded
-2026-07-13 12:20:14,552 - data_ingestion - DEBUG - duplicates removed
-2026-07-13 12:20:45,292 - data_ingestion - DEBUG - Data loaded properly
-2026-07-13 12:20:45,292 - data_ingestion - DEBUG - preprocessing starting...
-2026-07-13 12:20:45,300 - data_ingestion - DEBUG - target colulmn encoded
-2026-07-13 12:20:45,302 - data_ingestion - DEBUG - duplicates removed
-2026-07-13 12:22:14,374 - data_ingestion - ERROR - Error during data preprocessing: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:22:14,374 - data_ingestion - ERROR - Failed to complete the data transformation process: Must have equal len keys and value when setting with an iterable
-2026-07-13 12:41:33,797 - data_ingestion - DEBUG - Debug test
-2026-07-13 12:41:33,797 - data_ingestion - INFO - Info test
-2026-07-13 12:44:05,083 - data_ingestion - DEBUG - Debug test
-2026-07-13 12:44:05,083 - data_ingestion - INFO - Info test
-2026-07-13 12:47:33,666 - data_ingestion - DEBUG - Debug test
-2026-07-13 12:47:33,666 - data_ingestion - INFO - Info test
-2026-07-13 12:47:33,678 - data_ingestion - DEBUG - Data loaded properly
-2026-07-13 12:47:33,678 - data_ingestion - DEBUG - Starting preprocessing for DataFrame
-2026-07-13 12:47:33,678 - data_ingestion - DEBUG - Target column encoded
-2026-07-13 12:47:33,682 - data_ingestion - DEBUG - Duplicates removed
-2026-07-13 12:48:29,676 - data_ingestion - DEBUG - Text column transformed
-2026-07-13 12:48:29,676 - data_ingestion - DEBUG - Starting preprocessing for DataFrame
-2026-07-13 12:48:29,679 - data_ingestion - DEBUG - Target column encoded
-2026-07-13 12:48:29,679 - data_ingestion - DEBUG - Duplicates removed
-2026-07-13 12:48:46,119 - data_ingestion - DEBUG - Text column transformed
-2026-07-13 12:48:46,127 - data_ingestion - DEBUG - Processed data saved to ./data\interim
-2026-07-13 12:50:25,667 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/Veyn-cmd/mlops/refs/heads/main/data/spam.csv. Shape: (5572, 2)
-2026-07-13 12:50:25,667 - data_ingestion - DEBUG - data preprocessing completed successfully
-2026-07-13 12:50:25,691 - data_ingestion - DEBUG - Data saved successfully to ./data\raw.
-2026-07-13 12:50:52,842 - data_ingestion - DEBUG - Debug test
-2026-07-13 12:50:52,842 - data_ingestion - INFO - Info test
-2026-07-13 12:50:52,944 - data_ingestion - DEBUG - Data loaded properly
-2026-07-13 12:50:52,944 - data_ingestion - DEBUG - Starting preprocessing for DataFrame
-2026-07-13 12:50:52,944 - data_ingestion - DEBUG - Target column encoded
-2026-07-13 12:50:52,953 - data_ingestion - DEBUG - Duplicates removed
-2026-07-13 12:51:59,667 - data_ingestion - DEBUG - Text column transformed
-2026-07-13 12:51:59,669 - data_ingestion - DEBUG - Starting preprocessing for DataFrame
-2026-07-13 12:51:59,669 - data_ingestion - DEBUG - Target column encoded
-2026-07-13 12:51:59,670 - data_ingestion - DEBUG - Duplicates removed
-2026-07-13 12:52:16,867 - data_ingestion - DEBUG - Text column transformed
-2026-07-13 12:52:16,867 - data_ingestion - DEBUG - Processed data saved to ./data\interim
+2026-07-13 22:38:48,950 - data_ingestion - DEBUG - Data loaded successfully from https://raw.githubusercontent.com/Veyn-cmd/mlops/refs/heads/main/data/spam.csv. Shape: (5572, 2)
+2026-07-13 22:38:48,956 - data_ingestion - DEBUG - data preprocessing completed successfully
+2026-07-13 22:38:48,984 - data_ingestion - DEBUG - Data saved successfully to ./data\raw.

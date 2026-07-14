@@ -1,0 +1,84 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - path: src/data_ingestion.py
+      hash: md5
+      md5: 491e112adfd5ae239c051ca0c2ab8ffc
+      size: 2992
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: dafb0097aa2bb3b05603aa0c7e5c718f.dir
+      size: 485712
+      nfiles: 2
+  preprocessing:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: dafb0097aa2bb3b05603aa0c7e5c718f.dir
+      size: 485712
+      nfiles: 2
+    - path: src/preprocessing.py
+      hash: md5
+      md5: de6d4e1c8d51bb1fc00745aa0095b020
+      size: 4081
+    outs:
+    - path: data/interim
+      hash: md5
+      md5: a740c7ceb70b57e119dbab1a17323b5d.dir
+      size: 262452
+      nfiles: 2
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - path: data/interim
+      hash: md5
+      md5: a740c7ceb70b57e119dbab1a17323b5d.dir
+      size: 262452
+      nfiles: 2
+    - path: src/feature_engineering.py
+      hash: md5
+      md5: f167b6d862dbdfb4d0ad1755750399f5
+      size: 3790
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 438d02f30acdb7d9fcc486f53ec8c4d1.dir
+      size: 1181601
+      nfiles: 2
+  model_building:
+    cmd: python src/model_building.py
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 438d02f30acdb7d9fcc486f53ec8c4d1.dir
+      size: 1181601
+      nfiles: 2
+    - path: src/model_building.py
+      hash: md5
+      md5: 3bf17b966c8a59f8b238bf0cfddf2a3c
+      size: 3838
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 4d4d320d08b61a1b8bdeea3d25b5b6b4
+      size: 1076535
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+    - path: models/model.pkl
+      hash: md5
+      md5: 4d4d320d08b61a1b8bdeea3d25b5b6b4
+      size: 1076535
+    - path: src/model_evaluation.py
+      hash: md5
+      md5: 07aa41df4348b7e8a79df7e42a65e2ba
+      size: 3631
+    outs:
+    - path: reports/metrics.json
+      hash: md5
+      md5: 9e8dcf3c9b2ada1b8320cfafeaa7bdba
+      size: 145
